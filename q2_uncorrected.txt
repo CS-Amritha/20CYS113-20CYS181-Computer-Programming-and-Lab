@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    //To print pyramid in centre with proper spacing
+    int i,j,c,r,s;
+    printf("Enter the no of rows:");
+    scanf("%d",&r);
+    int num;
+    num =1;
+    for(s=0;s<=r-i;s++){
+        printf(" ");
+    }
+    
+    for(i=0;i<r;i++){ //To print 1 at begining and end
+        for(j=0;j==0||j==i;j++){
+            c=1;
+            printf("%d",&c);
+            for(j=0;j<i;j++){ //To print the numbers
+                printf("%d",&num);
+            }
+        } num++;
+    }
+
+    return 0;
+}
